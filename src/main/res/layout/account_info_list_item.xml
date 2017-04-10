@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_info_list_item_animator"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:measureAllChildren="false">
+    <RelativeLayout
+        android:id="@+id/account_info_list_item_layout1"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/search_item_base_font_size"
+            android:textColor="@android:color/black"
+            android:id="@+id/account_info_list_item_layout1_title"
+            android:layout_width="match_parent"
+            android:layout_toStartOf="@+id/account_info_list_item_layout1_number_label"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/search_item_base_font_size"
+            android:shadowRadius="2.0"
+            android:layout_below="@id/account_info_list_item_layout1_title"
+            android:layout_toStartOf="@+id/account_info_list_item_layout1_number_label"
+            android:id="@+id/account_info_list_item_layout1_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"/>
+        <TextView
+            android:id="@+id/account_info_list_item_layout1_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# Bought:"
+            android:textColor="@android:color/black"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@+id/account_info_list_item_layout1_number_variable"
+            />
+        <TextView
+            android:id="@+id/account_info_list_item_layout1_number_variable"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="0"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_info_list_item_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp">
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/account_info_list_item_layout2_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Book info"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/search_item_base_font_size"
+            android:paddingTop="6dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_info_list_item_layout2_price_label"
+            android:text="Price:"
+            android:layout_below="@+id/account_info_list_item_layout2_title_variable" />
+        <TextView
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/search_item_base_font_size"
+            android:paddingTop="8dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_info_list_item_layout2_title_label"
+            android:text="Title:"
+            android:layout_below="@+id/account_info_list_item_layout2_header_title"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/search_item_base_font_size"
+            android:paddingTop="6dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_info_list_item_layout2_isbn_label"
+            android:text="ISBN:"
+            android:layout_below="@+id/account_info_list_item_layout2_price_label"/>
+        <TextView
+            android:textSize="@dimen/search_item_base_font_size"
+            android:textColor="@android:color/black"
+            android:id="@+id/account_info_list_item_layout2_title_variable"
+            android:layout_toEndOf="@+id/account_info_list_item_layout2_title_label"
+            android:layout_alignBaseline="@+id/account_info_list_item_layout2_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/search_item_base_font_size"
+            android:textColor="@android:color/black"
+            android:id="@+id/account_info_list_item_layout2_price_variable"
+            android:layout_toEndOf="@+id/account_info_list_item_layout2_price_label"
+            android:layout_alignBaseline="@+id/account_info_list_item_layout2_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/search_item_base_font_size"
+            android:textColor="@android:color/black"
+            android:id="@+id/account_info_list_item_layout2_isbn_variable"
+            android:layout_toEndOf="@+id/account_info_list_item_layout2_isbn_label"
+            android:layout_alignBaseline="@+id/account_info_list_item_layout2_isbn_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</ViewAnimator>

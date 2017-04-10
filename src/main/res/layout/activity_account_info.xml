@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.christopher_santana.cs457bookstore.AccountInfo">
+
+    <ListView
+        android:id="@+id/account_info_list_view"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        app:layout_constraintTop_toBottomOf="@+id/account_info_basic_info"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingEnd="8dp"
+        android:layout_marginStart="8dp"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/account_info_basic_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/account_info_list_view"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:id="@+id/account_info_title_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:text="User Info"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/account_info_label_username"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_info_title_header"
+            android:paddingBottom="8dp"
+            android:text="Username:"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/account_info_label_number_purchased"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_info_label_username"
+            android:paddingBottom="8dp"
+            android:text="Books purchased:"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/account_info_label_money_spent"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_info_label_number_purchased"
+            android:paddingBottom="8dp"
+            android:text="Money Spent:"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/account_info_variable_money_spent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/account_info_label_money_spent"
+            android:layout_toEndOf="@id/account_info_label_money_spent"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/account_info_variable_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/account_info_label_username"
+            android:layout_toEndOf="@id/account_info_label_username"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/account_info_variable_number_purchased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/account_info_label_number_purchased"
+            android:layout_toEndOf="@id/account_info_label_number_purchased"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/account_info_label_list_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_info_label_money_spent"
+            android:paddingBottom="8dp"
+            android:text="Purchased Books"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

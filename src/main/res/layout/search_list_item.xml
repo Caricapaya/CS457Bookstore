@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_list_item_area"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/search_list_item_title"
+        android:layout_width="match_parent"
+        android:layout_toStartOf="@+id/search_list_item_check"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:shadowRadius="2.0"
+        android:layout_below="@id/search_list_item_title"
+        android:layout_toStartOf="@+id/search_list_item_check"
+        android:id="@+id/search_list_item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"/>
+
+    <CheckBox
+        android:buttonTint="@android:color/holo_blue_light"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/search_list_item_check"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+</RelativeLayout>

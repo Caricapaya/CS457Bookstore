@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/cart_list_item_title"
+        android:layout_width="match_parent"
+        android:layout_toStartOf="@+id/cart_list_item_delete"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:shadowRadius="2.0"
+        android:layout_below="@id/cart_list_item_title"
+        android:layout_toStartOf="@+id/cart_list_item_delete"
+        android:id="@+id/cart_list_item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"/>
+    <ImageButton
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:id="@+id/cart_list_item_delete"
+        android:layout_toStartOf="@+id/cart_list_item_number"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@android:drawable/ic_menu_delete"/>
+
+    <NumberPicker
+        android:id="@+id/cart_list_item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"></NumberPicker>
+
+</RelativeLayout>
